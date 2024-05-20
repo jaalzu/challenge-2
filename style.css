@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family:"Figtree", sans-serif;
+}
+
+.attribution{
+    display: none;
+}
+
+.card{
+    
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 1.3rem 1.4rem 1.4rem 1.4rem;
+    border-radius: 14px;
+    -webkit-box-shadow: 6px 5px 2px 3px rgba(0,0,0,1);
+    -moz-box-shadow: 6px 5px 2px 3px rgba(0,0,0,1);
+    box-shadow: 6px 5px 2px 3px rgba(0,0,0,1);
+    /* -webkit-box-shadow: 5px 6px 2px 1px rgba(0,0,0,0.89);
+-moz-box-shadow: 5px 6px 2px 1px rgba(0,0,0,0.89);
+box-shadow: 5px 6px 2px 1px rgba(0,0,0,0.89); */
+}
+
+.card .img-bg{
+border-radius: 10px;
+margin-bottom: 1.5rem;
+width: 100%;
+}
+
+.card .card__span{
+    color: black;
+    background-color: hsl(47, 88%, 63%);
+    padding: 5px 12px 5px 12px;
+    border-radius: 5px;
+    font-weight: 900;
+    font-size: .9rem;
+    cursor: pointer;
+  
+}
+
+
+
+.card .card__date{
+    padding-top: 1.3rem;
+    padding-bottom: 1rem;
+    font-weight: 550;
+    font-size: .9rem;
+}
+
+.card__title{
+    font-size: 1.6rem;
+    padding-bottom: 1.2rem;
+    font-weight: 800;
+    
+}
+
+.card__title:hover{
+    cursor: pointer;
+    color: hsl(47, 88%, 63%);
+}
+
+
+
+.card__text{
+    color: grey;
+    font-size: 1rem;
+    font-weight: 450;
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.card__user{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card__user img{
+    width: 35px;
+}
+
+.card__user span{
+    font-weight: 800;
+}
+
+@media screen and (max-width:376px){
+    .card{
+        max-width: 90vw;
+        }
+        .card .card__span{
+            font-size: .8rem;
+        }
+
+        .card .card__date{
+           font-size: .8rem;
+        }
+
+        .card__title{
+            font-size: 1.3rem;
+        }
+
+        .card__text{
+            font-size: .8rem;
+            line-height: 1.3rem;
+            width: 100%;
+            letter-spacing: .5px;
+        }
+
+        .card__user img{
+            width: 30px;
+        }
+        
+        .card__user span{
+            font-weight: 800;
+            font-size: .8rem;
+        }
+    }
